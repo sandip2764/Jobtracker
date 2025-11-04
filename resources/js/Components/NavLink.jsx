@@ -4,7 +4,7 @@ export default function NavLink({
     active = false,
     className = '',
     children,
-    ...props
+    
 }) {
     return (
         <Link

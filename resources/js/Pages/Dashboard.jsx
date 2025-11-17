@@ -9,11 +9,6 @@ import GlassIcons from '../Components/GlassIcons'
 import AnimatedList from '../Components/AnimatedList';
 import ShinyText from '../Components/ShinyText';
 import { RainbowButton } from '../Components/rainbow-button';
-import Dock from "@/Components/Dock";
-import { VscHome } from "react-icons/vsc";
-import { VscArchive } from "react-icons/vsc";
-import { VscAccount } from "react-icons/vsc";
-import { VscSettingsGear } from "react-icons/vsc";
 import CardNav from "@/Components/CardNav";
 
 // Function to handle animation completion
@@ -56,14 +51,6 @@ const Navitems = [
     ]
   }
 ];
-
- 
-const dock = [
-    { icon: <VscHome size={18} />, label: 'Home', onClick: () => alert('Home!') },
-    { icon: <VscArchive size={18} />, label: 'Archive', onClick: () => alert('Archive!') },
-    { icon: <VscAccount size={18} />, label: 'Profile', onClick: () => alert('Profile!') },
-    { icon: <VscSettingsGear size={18} />, label: 'Settings', onClick: () => alert('Settings!') },
-  ];
 
 
 // update with your own icons and colors
@@ -350,7 +337,7 @@ export default function Dashboard() {
         </div>
       </div>
       
-      <div className="py-8">
+      <header className="py-8">
         <CardNav
           logoAlt="Company Logo"
           items={Navitems}
@@ -360,7 +347,7 @@ export default function Dashboard() {
           buttonTextColor="#fff"
           ease="power3.out"
         />
-      </div>
+      </header>
       
 
 

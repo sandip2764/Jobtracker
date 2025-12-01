@@ -6,7 +6,6 @@ import { HiTrash } from "react-icons/hi";
 import { FaUserGroup , FaBriefcase, FaCheck, FaClock, FaEnvelope, FaIndianRupeeSign, FaCalendar } from "react-icons/fa6";
 import CardNav from "@/Components/CardNav";
 
-
 //nav items
 const Navitems = [
   {
@@ -46,7 +45,7 @@ const Navitems = [
 export default function ApplicationDetails() {
     return (
     <div className="container mx-auto max-w-7xl p-4 sm:p-6 lg:p-12"> 
-        <main className="bg-[#060010]  border-[#392e4e] rounded-2xl shadow-xl overflow-hidden mt-20">
+        <main className="bg-purple-950/30  border-[#392e4e] rounded-2xl shadow-xl overflow-hidden mt-20">
             <header className="">
                 <CardNav
                 logoAlt="Company Logo"
@@ -172,7 +171,7 @@ export default function ApplicationDetails() {
                         <h2 className="text-xl font-bold text-white mb-4">Your Notes</h2>
                         <textarea 
                             rows="8" 
-                            className=" bg-black w-full p-4 rounded-lg border border-purple-500 focus:ring-2 focus:ring-purple-500 focus:border-[#392e4e] transition-shadow text-gray-200" 
+                            className=" bg-purple-950/30 w-full p-4 rounded-lg border border-purple-500 focus:ring-2 focus:ring-purple-500 focus:border-[#392e4e] transition-shadow text-gray-200" 
                             placeholder="Add your personal notes, interview prep, contacts, etc... This is fully editable.&#10;&#10;- Interviewer: Jane Doe (Hiring Manager)&#10;- Discussed my portfolio project on 'Project X'.&#10;- Follow-up questions to ask: ...">
                         </textarea>
                     </section>
@@ -220,7 +219,7 @@ export default function ApplicationDetails() {
 
                 <aside className="lg:col-span-1 space-y-8">
                     
-                    <section className="bg-[#060010] p-6 rounded-lg border border-purple-900">
+                    <section className="bg-purple-950/30 p-6 rounded-lg border border-purple-900">
                         <GradientText
                             colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
                             animationSpeed={3}

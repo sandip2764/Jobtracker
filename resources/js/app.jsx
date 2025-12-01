@@ -10,7 +10,13 @@ import Dashboard from './Pages/Dashboard';
 import Applications from './Pages/Applications';
 import AddApplication from './Pages/AddApplication';
 import ApplicationDetails from './Pages/ApplicationDetails';
+import AnalyticsDashboard from './Pages/AnalyticsDashboard';
+import InterviewPrep from './Pages/InterviewPrep';
+import Profile from './Pages/Profile';
+import PageNotFound from './Pages/404Page';
 import ProtectedRoute from './components/ProtectedRoute';
+
+
 
 function App() {
     return (
@@ -38,7 +44,7 @@ function App() {
                         }
                     />
                     <Route 
-                        path= "/add_application"
+                        path= "/add-application"
                         element={
                             <ProtectedRoute>
                                 <AddApplication />
@@ -46,10 +52,46 @@ function App() {
                         }
                     />
                     <Route 
-                        path= "/application_details"
+                        path= "/application-details"
                         element={
                             <ProtectedRoute>
                                 <ApplicationDetails />
+                            </ProtectedRoute>
+                        }
+                    />
+
+                    <Route 
+                        path= "/analytics-dashboard"
+                        element={
+                            <ProtectedRoute>
+                                <AnalyticsDashboard />
+                            </ProtectedRoute>
+                        }
+                    />
+
+                    <Route 
+                        path= "/interview-prep"
+                        element={
+                            <ProtectedRoute>
+                                <InterviewPrep />
+                            </ProtectedRoute>
+                        }
+                    />
+
+                    <Route 
+                        path= "/Profile"
+                        element={
+                            <ProtectedRoute>
+                                <Profile />
+                            </ProtectedRoute>
+                        }
+                    />
+
+                    <Route 
+                        path= "/Error"
+                        element={
+                            <ProtectedRoute>
+                                <PageNotFound />
                             </ProtectedRoute>
                         }
                     />

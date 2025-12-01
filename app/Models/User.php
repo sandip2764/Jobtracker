@@ -18,6 +18,14 @@ class User extends Authenticatable
         'google_id',
         'github_id',
         'avatar',
+        'phone',
+        'location',
+        'current_role',
+        'experience',
+        'bio',
+        'portfolio_url',
+        'github_url',
+        'linkedin_url',
     ];
 
     protected $hidden = [

@@ -7,6 +7,7 @@ import DropdownButton from "@/Components/DropdownButton2";
 import DropdownStatusButton from "@/Components/DropdownButton";
 import DropdownButton2 from "@/Components/DropdownButton3";
 import DropdownSourceButton from "@/Components/DropdownSource";
+import DarkVeil from "@/Components/DarkVeil";
 
 
 //nav items
@@ -47,6 +48,11 @@ const Navitems = [
 export default function AddApplication() {
   return (
   <main className="w-[calc(100vw-0px)] flex flex-col p-36 max-sm:p-6">
+    <div className="absolute inset-0 opacity-70 mix-blend-screen">
+      <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+        <DarkVeil />
+      </div>
+    </div>
     <header className="py-8 mb-4">
       <CardNav
       logoAlt="Company Logo"
@@ -65,7 +71,7 @@ export default function AddApplication() {
       <div>
         <GradientText
           colors={["#8660fa", "#a855f7", "#8400ff", "#a855f7", "#8660fa"]}
-          animationSpeed={3}
+          animationSpeed={8}
           showBorder={false}
           className="custom-class"
           >

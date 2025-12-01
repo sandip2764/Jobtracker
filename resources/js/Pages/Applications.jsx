@@ -7,6 +7,7 @@ import ShinyText from "@/Components/ShinyText";
 import AnimatedList from "@/Components/AnimatedList";
 import { RainbowButton } from "@/Components/rainbow-button";
 import CardNav from "@/Components/CardNav";
+import DarkVeil from "@/Components/DarkVeil";
 
 
 //nav items
@@ -436,6 +437,12 @@ const list1 = [
 export default function Applications() {
     return (
         <main className="w-[calc(100vw-0px)] flex flex-col p-20 max-sm:p-6">
+            <div className="absolute inset-0 opacity-70 mix-blend-screen">
+                <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+                    <DarkVeil />
+                </div>
+            </div>
+
             <header className="py-8">
                 <CardNav
                 logoAlt="Company Logo"
@@ -451,11 +458,11 @@ export default function Applications() {
             <div className="pb-10 relative">
                 <GradientText
                     colors={["#8660fa", "#a855f7", "#8400ff", "#a855f7", "#8660fa"]}
-                    animationSpeed={3}
+                    animationSpeed={8}
                     showBorder={false}
                     className="custom-class"
                     >
-                    <h1 className="text-6xl font-extrabold mt-10 mb-4 max-sm:text-2xl max-sm:mt-4 max-sm:mb-2">My Applications</h1>
+                    <h1 className="text-5xl font-extrabold mt-10 mb-4 max-sm:text-2xl max-sm:mt-4 max-sm:mb-2">My Applications</h1>
                 </GradientText>
                 <p className="text-purple-100 text-xl font-medium pb-4 max-sm:text-xs max-sm:w-[60%]">Track and manage all your job applications</p>
                 

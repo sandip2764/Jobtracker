@@ -9,6 +9,7 @@ import AuthCallback from './Pages/AuthCallback';
 import Dashboard from './Pages/Dashboard';
 import Applications from './Pages/Applications';
 import AddApplication from './Pages/AddApplication';
+import EditApplication from './Pages/EditApplication';
 import ApplicationDetails from './Pages/ApplicationDetails';
 import AnalyticsDashboard from './Pages/AnalyticsDashboard';
 import InterviewPrep from './Pages/InterviewPrep';
@@ -35,6 +36,7 @@ function App() {
                             </ProtectedRoute>
                         }
                     />
+
                     <Route 
                         path= "/applications"
                         element={
@@ -43,6 +45,7 @@ function App() {
                             </ProtectedRoute>
                         }
                     />
+
                     <Route 
                         path= "/add-application"
                         element={
@@ -51,8 +54,18 @@ function App() {
                             </ProtectedRoute>
                         }
                     />
+
                     <Route 
-                        path= "/application-details"
+                        path= "/edit-application/:id"
+                        element={
+                            <ProtectedRoute>
+                                <EditApplication />
+                            </ProtectedRoute>
+                        }
+                    />
+
+                    <Route 
+                        path= "/application-details/:id"
                         element={
                             <ProtectedRoute>
                                 <ApplicationDetails />

@@ -8,12 +8,12 @@ const ApplicationChart = () => {
 
   // Data for the chart
   const data = [
-    { name: 'Linkedln', value: 45, color: '#305CDE', icon: FileText }, // 
-    { name: 'Naukri', value: 12, color: '#8A00C4', icon: Briefcase }, // 
+    { name: 'Linkedln', value: 45, color: '#5555e7', icon: FileText }, // 
+    { name: 'Naukri', value: 12, color: '#2323FF', icon: Briefcase }, // 
     { name: 'Referrals', value: 4, color: '#0BDA51', icon: CheckCircle }, // 
     { name: 'Indeed', value: 15, color: '#E84B3D', icon: XCircle }, // 
-    { name: 'Company Websites', value: 10, color: '#E84B3D', icon: XCircle }, // 
-    { name: 'Others', value: 2, color: '#E84k3D', icon: XCircle }, // 
+    { name: 'Company Websites', value: 10, color: '#dcde5e', icon: XCircle }, // 
+    { name: 'Others', value: 2, color: '#48e1f4', icon: XCircle }, // 
   ];
 
   // Calculate total for center text

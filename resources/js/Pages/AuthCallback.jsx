@@ -26,8 +26,6 @@ export default function AuthCallback() {
             try {
                 // Save token
                 localStorage.setItem('auth_token', token);
-
-                // Fetch user data
                 const response = await api.get('/user');
                 login(token, response.data.user);
 
@@ -45,7 +43,7 @@ export default function AuthCallback() {
     return (
         <div className="min-h-screen bg-[#0C0C0C] flex items-center justify-center">
             <div className="text-center">
-                <div className="w-16 h-16 border-4 border-[#24CFA6] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                <div className="w-16 h-16 border-4 border-[#6b24cf] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                 <p className="text-[#E9E9E9] text-lg font-semibold">Signing you in...</p>
             </div>
         </div>

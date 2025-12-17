@@ -68,7 +68,7 @@ export default function SuccessRateChart() {
         borderRadius: "14px",
         p: 2,
         height: "300px",
-        width: "50%",
+        width: "100%",
         display: "flex",
         flexDirection: "column",
       }}

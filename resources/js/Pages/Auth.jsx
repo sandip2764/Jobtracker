@@ -54,7 +54,7 @@ export default function Auth() {
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
                 Welcome to <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">JobTracker</span>
               </h1>
-              <p className="text-zinc-400 text-base md:text-lg">
+              <p className="text-zinc-400 text-base md:text-lg bg-orange-dark-700">
                 Track your applications, land your dream job
               </p>
             </div>
@@ -155,7 +155,7 @@ export default function Auth() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .bg-grid {
           background-image: 
             linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),

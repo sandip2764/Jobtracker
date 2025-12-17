@@ -1,18 +1,21 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-/* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Agar aapke paas koi custom CSS hai, toh yahan add karein */
 /* Global styles */
 @layer base {
   * {
     font-family: "Figtree", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   body {
-    background-color: black;
+    background-color: #060010;
   }
   :root {
     --background: 0 0% 100%;

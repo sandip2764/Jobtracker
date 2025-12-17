@@ -130,7 +130,11 @@ This project was built to practice **real-world full-stack development**, REST A
 
 ```text
 screenshots/
-├── login.png
+├── auth.png
 ├── dashboard.png
-├── applications.png
-├── analytics.png
+├── application-lists.png
+├── analytics-dashboard.png
+├── add-application.png
+├── application-details.png
+├── profile.png
+
